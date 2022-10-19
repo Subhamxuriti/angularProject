@@ -5,6 +5,7 @@
     line-height: 12px;
     font-size: 13px;
     font-weight: 300;
+    overflow-y: hidden;
 
 
 }
@@ -40,7 +41,7 @@
     background: linear-gradient(180deg, rgba(110, 117, 119, 0.48) 0%, rgba(0, 0, 0, 0) 100%);
     border-radius: 10px;
 
-}
+} 
 
 
 .single-card-header-1 {
@@ -114,9 +115,9 @@
 
     background: #FBA806;
     border-radius: 0.625rem;
-}
+} 
 
-::ng-deep .mat-datepicker-input 
+ ::ng-deep .mat-datepicker-input 
 {
     background: transparent;
     border-color:rgb(127, 122, 122);
@@ -129,8 +130,8 @@
     
     
     
-}
-.second-card-header-1 {
+} 
+ .second-card-header-1 {
     position: absolute;
     width: 5.75rem;
     height: 0.5rem;
@@ -266,7 +267,7 @@
     color: #f7f3f3;
     border-radius: 0.625rem;
 }
-/* .second-card-header-10 {
+.second-card-header-10 {
     position: absolute;
     width: 5.8rem;
     height: 0.5rem;
@@ -280,16 +281,17 @@
     background: #3e3838f6;
     color: #f7f3f3;
     border-radius: 0.625rem;
-} */
-
-/* .content-table{
+}
+  /* .content-table{
     border-collapse: collapse;
     margin: 25px 0;
     font-size: 0.9em;
     min-width: 3rem;
     width: 100%;
     margin: 10px;
-    border-radius: 10px 10px 0 0;
+    background-color: #dad3d3;
+    
+   
     overflow: hidden;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.75);
     font-family: 'Montserrat';
@@ -297,30 +299,47 @@
 
 }
 
-.content-table thead tr{
-    background-color: #FBA806;
-    color: #f7f3f3;
-    text-align: left;
-    font-weight: bold;
+.content-table thead tr
+    
+   
 
+    
+
+   
+
+
+.content-table tbody tr{
+ background-color: #b1a8a8;
+ border-radius: 15px;
+ border: 1px solid;
+ border-radius: 10px;
 }
+
 
 .content-table th{
-    background: #3e3838f6;
-}
+  background-color: #4f4a4a;
+  margin: 10px;
+ border: 1px solid; 
+  border-radius: 10px;
+  margin-right: 5px;
+  color: aliceblue;
+} 
+
+
+
 
 
 .content-table td{
     padding: 12px 15px;
 }
 .content-table tbody tr{
-    border-bottom: 1px solid #f7f3f3;
+    border-bottom: 1px solid #6c6666;
 
 }
 .content-table tbody tr:nth-of-type(even){
 
-    background-color: #f3f3f3;
+    background-color: #b1a8a8;
 
 
-} */
+}  */
 
