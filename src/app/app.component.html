@@ -1,0 +1,284 @@
+<div class="header-table">
+  <span>Invoice List</span>
+
+</div>
+
+
+ <mat-card class="table-header-card">
+
+
+  <mat-card class="single-card-header-1">
+
+    <span style="margin-right: 3px;">Invoice List</span>
+    <input style="background: transparent; border-radius:5px;border:1px solid;font-family:'Montserrat';"
+      class="form-control" type="text" name="search" [(ngModel)]="searchText" autocomplete="on" placeholder="search" />
+
+  </mat-card>
+
+
+
+  <mat-card class="single-card-header-2">
+    <span>Uploded</span>
+    <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+      <mat-icon>more_vert</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>
+        <mat-icon>dialpad</mat-icon>
+        <span>Subham</span>
+      </button>
+      <button mat-menu-item disabled>
+        <mat-icon>voicemail</mat-icon>
+        <span>Check voice mail</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>notifications_off</mat-icon>
+        <span>Disable alerts</span>
+      </button>
+    </mat-menu>
+  </mat-card>
+
+
+
+  <mat-card class="single-card-header-3">
+    <span>Status</span>
+    <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+      <mat-icon>more_vert</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>
+        <mat-icon>dialpad</mat-icon>
+        <span>Subham</span>
+      </button>
+      <button mat-menu-item disabled>
+        <mat-icon>voicemail</mat-icon>
+        <span>Check voice mail</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>notifications_off</mat-icon>
+        <span>Disable alerts</span>
+      </button>
+    </mat-menu>
+  </mat-card>
+
+  <mat-card class="single-card-header-4">
+
+    <input class="mat-date-input" style="margin-top: 10px; margin-right: 2px;" matInput [matDatepicker]="picker">
+    <mat-hint style="margin-top: 10px;">MM/DD/YYYY</mat-hint>
+    <mat-datepicker-toggle matSuffix [for]="picker" style="margin-top: 10px;"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+
+
+  </mat-card>
+
+</mat-card> 
+
+ <table style="display:flex;
+                overflow: hidden;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                align-content: center;
+                justify-content: space-evenly;
+                align-items: flex-start;min-width: 4.5rem;font: 400 13px/10px;border-spacing: 0px;
+                            table-layout: fixed;
+                 margin-left:auto;
+                            margin-right:auto;width:100%">
+
+
+  <thead style="word-wrap: break-word;max-width: 150px;margin-top:1rem;">
+
+     <div class="levels" style="display: flex; padding:3rem;padding-left:1rem;margin-top:1.5rem;line-height: 14px; "> 
+    <tr>
+      <mat-card class="second-card-header-1">
+        <th>Invoice No.</th>
+      </mat-card>
+    </tr>
+
+    <tr>
+      <mat-card class="second-card-header-2">
+        <th>Uploded By.</th>
+      </mat-card>
+    </tr>
+
+    <tr>
+      <mat-card class="second-card-header-3">
+        <th>Total Amount</th>
+      </mat-card>
+    </tr>
+
+    <tr>
+      <mat-card class="second-card-header-4">
+        <th>GST NO.</th>
+      </mat-card>
+    </tr>
+
+    <tr>
+      <mat-card class="second-card-header-5">
+        <th>Status</th>
+      </mat-card>
+    </tr>
+
+    <tr>
+      <mat-card class="second-card-header-6">
+        <th>Invoice Due Date</th>
+      </mat-card>
+    </tr>
+
+    <tr>
+      <mat-card class="second-card-header-7">
+        <th>Saving/Losses</th>
+      </mat-card>
+    </tr>
+
+    <tr>
+      <mat-card class="second-card-header-8">
+        <th>Outstanding Amt.</th>
+      </mat-card>
+    </tr>
+
+    <tr>
+      <mat-card class="second-card-header-9">
+        <th>Actions</th>
+      </mat-card>
+    </tr>
+     </div> 
+
+
+
+
+  </thead>
+
+
+  <tbody style=" font-family: 'Montserrat';padding-left: 1rem; display:flex;word-wrap: break-word;min-width: 4.5rem;table-layout: fixed;
+  margin-left:auto;
+  margin-right:auto;width:100%">
+
+    <tr style="display: flex;
+     padding-left: 1rem;  
+     flex-direction: row;
+     flex-wrap: nowrap;
+     justify-content: space-between;
+     align-items: center;">
+
+     
+        <td>2587964</td>
+        <td style="padding-left: 4.1rem; max-width: 5rem;">
+          sheenlac</td>
+        <td style="padding-left: 5.1rem;">100000</td>
+        <td style="padding-left: 5.5rem;">KOWEFN4356822NNJDM</td>
+        <td style="padding-left: 6.9rem; display: flex;    align-items: center;    left: 10px; ">
+          <mat-card style="background: rgba(52, 53, 54, 0.25);
+        border-radius: 30px;padding: 9px;">
+            <img style="margin-right: 11px" src="../assets/pogo.svg">PENDING
+          </mat-card>
+        </td>
+        <td style="padding-left: 4.5rem;">DD/YY/MM</td>
+        <td style="padding-left: 5.9rem;color: #76FF03;">SAVING</td>
+        <td style="padding-left: 8.1rem;">100000000</td>
+        <td style="padding-left: 5rem;">
+
+          <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+            <mat-icon>more_vert</mat-icon>
+          </button>
+          <mat-menu #menu="matMenu">
+            <button mat-menu-item>
+              <mat-icon>dialpad</mat-icon>
+              <span>Subham</span>
+            </button>
+            <button mat-menu-item disabled>
+              <mat-icon>voicemail</mat-icon>
+              <span>Check voice mail</span>
+            </button>
+            <button mat-menu-item>
+              <mat-icon>notifications_off</mat-icon>
+              <span>Disable alerts</span>
+            </button>
+          </mat-menu>
+        </td>
+    
+
+    </tr>
+
+  </tbody>
+
+
+
+</table> 
+
+<!-- <table class="content-table">
+  <thead>
+    <tr>
+      <mat-card class="second-card-header-1">
+        <th>Invoice No</th>
+      </mat-card>
+      <mat-card class="second-card-header-2">
+        <th>Uploded By</th>
+      </mat-card>
+      <mat-card class="second-card-header-3">
+        <th>Total Amount</th>
+      </mat-card>
+      <mat-card class="second-card-header-4">
+        <th>Gst No</th>
+      </mat-card>
+      <mat-card class="second-card-header-5">
+        <th>Outstanding Amount</th>
+      </mat-card>
+      <mat-card class="second-card-header-6">
+        <th>Status</th>
+      </mat-card>
+      <mat-card class="second-card-header-7">
+        <th>Invoice Date</th>
+      </mat-card>
+      <mat-card class="second-card-header-8">
+        <th>Invoice Due Date</th>
+      </mat-card>
+      <mat-card class="second-card-header-9">
+        <th>Saving/Loss</th>
+      </mat-card>
+      <mat-card class="second-card-header-10">
+        <th>Action</th>
+      </mat-card>
+
+    </tr>
+  </thead>
+  <tbody>
+
+
+    
+      <tr>
+        <td>745879746</td>
+        <td>sheenlac private limited </td>
+        <td>6000000</td>
+        <td>33AABCI7552F1ZR</td>
+        <td>100000</td>
+        <td style="display: flex;margin-top: 10px;margin-right: 5px;">
+          <img src="../assets/pogo.svg">
+          Pending
+        </td>
+        <td>DD/MM/YY</td>
+        <td>DD/MM/YY</td>
+        <td>SAVING</td>
+        <td>
+          <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+            <mat-icon>more_vert</mat-icon>
+          </button>
+          <mat-menu #menu="matMenu">
+            <button mat-menu-item>
+              <mat-icon>dialpad</mat-icon>
+              <span>Subham</span>
+            </button>
+            <button mat-menu-item disabled>
+              <mat-icon>voicemail</mat-icon>
+              <span>Check voice mail</span>
+            </button>
+            <button mat-menu-item>
+              <mat-icon>notifications_off</mat-icon>
+              <span>Disable alerts</span>
+            </button>
+          </mat-menu>
+        </td>
+
+      </tr>
+    
+  </tbody>
+</table> -->
