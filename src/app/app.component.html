@@ -4,7 +4,7 @@
 </div>
 
 
-  <mat-card class="table-header-card">
+ <!-- <mat-card class="table-header-card">
 
 
   <mat-card class="single-card-header-1">
@@ -71,7 +71,7 @@
 
   </mat-card>
 
-</mat-card> 
+</mat-card>  -->
 
  <table style="display:flex;
                 overflow: hidden;
@@ -149,11 +149,11 @@
   </thead>
 
 
-  <tbody style=" font-family: 'Montserrat';padding-left: 1rem; display:flex;word-wrap: break-word;min-width: 4.5rem;table-layout: fixed;
+  <tbody style=" font-family: 'Montserrat';padding-left: 1rem; display:flex;word-wrap: break-word;min-width: 4.5rem;table-layout: fixed;flex-direction: row;
   margin-left:auto;
   margin-right:auto;width:100%">
 
-    <tr style="display: flex;
+    <tr *ngFor="let e of this.data" style="display: flex;
      padding-left: 1rem;  
      flex-direction: row;
      flex-wrap: nowrap;
@@ -161,20 +161,20 @@
      align-items: center;">
 
      
-        <td>2587964</td>
+        <td>{{e.invoice_number}}</td>
         <td style="padding-left: 4.1rem; max-width: 5rem;">
-          sheenlac</td>
-        <td style="padding-left: 5.1rem;">100000</td>
-        <td style="padding-left: 5.5rem;">KOWEFN4356822NNJDM</td>
+          {{e.uploadedby}}</td>
+        <td style="padding-left: 5.1rem;">{{e.totalamount}}</td>
+        <td stbyle="padding-left: 5.5rem;">{{e.gst}}</td>
         <td style="padding-left: 6.9rem; display: flex;    align-items: center;    left: 10px; ">
           <mat-card style="background: rgba(52, 53, 54, 0.25);
         border-radius: 30px;padding: 9px;">
-            <img style="margin-right: 11px" src="../assets/pogo.svg">PENDING
+            <img style="margin-right: 11px" src="../assets/pogo.svg">{{e.status}}
           </mat-card>
         </td>
-        <td style="padding-left: 4.5rem;">DD/YY/MM</td>
-        <td style="padding-left: 5.9rem;color: #76FF03;">SAVING</td>
-        <td style="padding-left: 8.1rem;">100000000</td>
+        <td style="padding-left: 4.5rem;">{{e.invoicedue}}</td>
+        <td style="padding-left: 5.9rem;color: #76FF03;">{{e.saving}}</td>
+        <td style="padding-left: 8.1rem;">{{e.outstandingamount}}</td>
         <td style="padding-left: 5rem;">
 
           <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
@@ -198,6 +198,7 @@
     
 
     </tr>
+ 
 
   </tbody>
 
@@ -279,4 +280,9 @@
       </tr> 
     
   </tbody>
-</table>  -->
+</table> -->
+<script>
+  const tableLoop = async ()  =>{
+
+  }
+</script>
