@@ -18,17 +18,27 @@ export class AppComponent {
           invoice_number: "12345",
           uploadedby: "NEW SHANTHI UPAHAR",
           totalamount: "50000",
-          gst: "1200",
+          gst: "33AABCI7552F1ZRZZZZ",
+          status: "PENDING",
+          invoicedue: "08/10/2022",
+          saving: "9899",
+          outstandingamount: "5677728"
+      },
+      {
+          invoice_number: "45552",
+          uploadedby: "NEW SHANTHI UPAHAR",
+          totalamount: "50000",
+          gst: "33AABCI7552F1ZRZZZZ",
           status: "PENDING",
           invoicedue: "22/08/2022",
           saving: "9899",
           outstandingamount: "5677728"
       },
       {
-          invoice_number: "455526",
+          invoice_number: "12345",
           uploadedby: "NEW SHANTHI UPAHAR",
-          totalamount: "50000",
-          gst: "1200",
+          totalamount: "50000000",
+          gst: "33AABCI7552F1ZRZZZZ",
           status: "PENDING",
           invoicedue: "22/08/2022",
           saving: "9899",
@@ -38,7 +48,17 @@ export class AppComponent {
           invoice_number: "12345",
           uploadedby: "NEW SHANTHI UPAHAR",
           totalamount: "50000",
-          gst: "1200",
+          gst: "33AABCI7552F1ZRZZZZ",
+          status: "PENDING",
+          invoicedue: "22/08/2022",
+          saving: "000000000",
+          outstandingamount: "567772888888888888888"
+      },
+      {
+          invoice_number: "12345",
+          uploadedby: "NEW SHANTHI UPAHAR",
+          totalamount: "50000",
+          gst: "33AABCI7552F1ZRZZZZ",
           status: "PENDING",
           invoicedue: "22/08/2022",
           saving: "9899",
@@ -48,32 +68,162 @@ export class AppComponent {
           invoice_number: "12345",
           uploadedby: "NEW SHANTHI UPAHAR",
           totalamount: "50000",
-          gst: "1200",
+          gst: "33AABCI7552F1ZRZZZZ",
           status: "PENDING",
           invoicedue: "22/08/2022",
           saving: "9899",
           outstandingamount: "5677728"
       },
       {
-          invoice_number: "12345",
-          uploadedby: "NEW SHANTHI UPAHAR",
-          totalamount: "50000",
-          gst: "1200",
-          status: "PENDING",
-          invoicedue: "22/08/2022",
-          saving: "9899",
-          outstandingamount: "5677728"
-      },
-      {
-          invoice_number: "12345",
-          uploadedby: "NEW SHANTHI UPAHAR",
-          totalamount: "50000",
-          gst: "1200",
-          status: "PENDING",
-          invoicedue: "22/08/2022",
-          saving: "9899",
-          outstandingamount: "5677728"
-      },
+        invoice_number: "12345",
+        uploadedby: "NEW SHANTHI UPAHAR",
+        totalamount: "50000",
+        gst: "33AABCI7552F1ZRZZZZ",
+        status: "PENDING",
+        invoicedue: "08/10/2022",
+        saving: "9899",
+        outstandingamount: "5677728"
+    },
+    {
+        invoice_number: "12345",
+        uploadedby: "NEW SHANTHI UPAHAR",
+        totalamount: "50000",
+        gst: "33AABCI7552F1ZRZZZZ",
+        status: "PENDING",
+        invoicedue: "08/10/2022",
+        saving: "9899",
+        outstandingamount: "5677728"
+    },
+    {
+        invoice_number: "12345",
+        uploadedby: "NEW SHANTHI UPAHAR",
+        totalamount: "50000",
+        gst: "33AABCI7552F1ZRZZZZ",
+        status: "PENDING",
+        invoicedue: "08/10/2022",
+        saving: "9899",
+        outstandingamount: "5677728"
+    },
+    {
+        invoice_number: "12345",
+        uploadedby: "NEW SHANTHI UPAHAR",
+        totalamount: "50000",
+        gst: "33AABCI7552F1ZRZZZZ",
+        status: "PENDING",
+        invoicedue: "08/10/2022",
+        saving: "9899",
+        outstandingamount: "5677728"
+    },
+    {
+        invoice_number: "12345",
+        uploadedby: "NEW SHANTHI UPAHAR",
+        totalamount: "50000",
+        gst: "33AABCI7552F1ZRZZZZ",
+        status: "PENDING",
+        invoicedue: "08/10/2022",
+        saving: "9899",
+        outstandingamount: "5677728"
+    },
+    {
+        invoice_number: "12345",
+        uploadedby: "NEW SHANTHI UPAHAR",
+        totalamount: "50000",
+        gst: "33AABCI7552F1ZRZZZZ",
+        status: "PENDING",
+        invoicedue: "08/10/2022",
+        saving: "9899",
+        outstandingamount: "5677728"
+    },
+    {
+        invoice_number: "12345",
+        uploadedby: "NEW SHANTHI UPAHAR",
+        totalamount: "50000",
+        gst: "33AABCI7552F1ZRZZZZ",
+        status: "PENDING",
+        invoicedue: "08/10/2022",
+        saving: "9899",
+        outstandingamount: "5677728"
+    },
+    {
+        invoice_number: "12345",
+        uploadedby: "NEW SHANTHI UPAHAR",
+        totalamount: "50000",
+        gst: "33AABCI7552F1ZRZZZZ",
+        status: "PENDING",
+        invoicedue: "08/10/2022",
+        saving: "9899",
+        outstandingamount: "5677728"
+    },
+    {
+        invoice_number: "12345",
+        uploadedby: "NEW SHANTHI UPAHAR",
+        totalamount: "50000",
+        gst: "33AABCI7552F1ZRZZZZ",
+        status: "PENDING",
+        invoicedue: "08/10/2022",
+        saving: "9899",
+        outstandingamount: "5677728"
+    },
+    {
+        invoice_number: "12345",
+        uploadedby: "NEW SHANTHI UPAHAR",
+        totalamount: "50000",
+        gst: "33AABCI7552F1ZRZZZZ",
+        status: "PENDING",
+        invoicedue: "08/10/2022",
+        saving: "9899",
+        outstandingamount: "5677728"
+    },
+    {
+        invoice_number: "12345",
+        uploadedby: "NEW SHANTHI UPAHAR",
+        totalamount: "50000",
+        gst: "33AABCI7552F1ZRZZZZ",
+        status: "PENDING",
+        invoicedue: "08/10/2022",
+        saving: "9899",
+        outstandingamount: "5677728"
+    },
+    {
+        invoice_number: "12345",
+        uploadedby: "NEW SHANTHI UPAHAR",
+        totalamount: "50000",
+        gst: "33AABCI7552F1ZRZZZZ",
+        status: "PENDING",
+        invoicedue: "08/10/2022",
+        saving: "9899",
+        outstandingamount: "5677728"
+    },
+    {
+        invoice_number: "12345",
+        uploadedby: "NEW SHANTHI UPAHAR",
+        totalamount: "50000",
+        gst: "33AABCI7552F1ZRZZZZ",
+        status: "PENDING",
+        invoicedue: "08/10/2022",
+        saving: "9899",
+        outstandingamount: "5677728"
+    },
+    {
+        invoice_number: "12345",
+        uploadedby: "NEW SHANTHI UPAHAR",
+        totalamount: "50000",
+        gst: "33AABCI7552F1ZRZZZZ",
+        status: "PENDING",
+        invoicedue: "08/10/2022",
+        saving: "9899",
+        outstandingamount: "5677728"
+    },
+    {
+        invoice_number: "12345",
+        uploadedby: "NEW SHANTHI UPAHAR",
+        totalamount: "50000",
+        gst: "33AABCI7552F1ZRZZZZ",
+        status: "PENDING",
+        invoicedue: "08/10/2022",
+        saving: "9899",
+        outstandingamount: "5677728"
+    },
      
     
     ]

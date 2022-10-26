@@ -1,14 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+::ng-deep .mat-typography {
 
-::ng-deep .mat-typography
-{
-
-    line-height: 12px;
-    font-size: 13px;
+    line-height: 12px;  
+    font-size: 10px;
     font-weight: 300;
-    overflow-y: hidden;
+    overflow-x: hidden;
+    line-height: 25px;
+    font-family: 'Montserrat'; 
+
 
 
 }
+
 .header-table {
     font-family: 'Montserrat';
     margin: 2rem;
@@ -22,13 +25,17 @@
 
 }
 
+::ng-deep .paginator{
+    font-family: 'Montserrat';
+}
 
+/*----------------------------------------------------- CSS DESIGN FOR THE TOP FILTER------------------------------------------------------------------------------------ */
 
-.table-header-card {
+/* .table-header-card {
     position: absolute;
     width: 46.5rem;
     height: 2rem;
-   
+
     margin-left: 1rem;
     margin-top: 0.3rem;
     display: flex;
@@ -41,7 +48,7 @@
     background: linear-gradient(180deg, rgba(110, 117, 119, 0.48) 0%, rgba(0, 0, 0, 0) 100%);
     border-radius: 10px;
 
-} 
+}
 
 
 .single-card-header-1 {
@@ -54,7 +61,7 @@
     background: #FBA806;
     border-radius: 0.625rem;
     font-family: 'Montserrat';
-    
+
 }
 
 .single-card-header-2 {
@@ -115,50 +122,183 @@
 
     background: #FBA806;
     border-radius: 0.625rem;
-} 
+}
 
- ::ng-deep .mat-datepicker-input 
-{
+::ng-deep .mat-datepicker-input {
     background: transparent;
-    border-color:rgb(127, 122, 122);
-    border:1px solid;
+    border-color: rgb(127, 122, 122);
+    border: 1px solid;
     border-radius: 5px;
     width: 70px;
-    font-family:'Montserrat' ;
-    font-weight: 400; 
+    font-family: 'Montserrat';
+    font-weight: 400;
     margin-top: 10px;
+
+
+
+}*/
+/* ------------------------------------------------------------------ CSS DESIGN OF THE TABLE   ------------------------------------------------------------------------- */
+
+.container-table {
+    display: flex; 
+    overflow-x: hidden;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    min-width: 4.5rem;
+    border-spacing: 0px;
+    width: 100%;
+    align-content: space-between;
+    justify-content: space-around;
+    font-family: 'Montserrat';
+    line-height: 25px;
     
+}
+
+
+
+
+
+.container-table thead {
+
+
+    font-family: 'Montserrat';
+    padding: 1rem;
+    width: 100%;
+   
+
+}
+
+.status {
+    display: flex;
+    align-items: center;
+    font-family: 'Montserrat';
+}
+
+.status-background {
+    background: rgba(52, 53, 54, 0.25);
+    border-radius: 30px;
+    padding: 0px 7px 0px 5px;
+    font-size:x-small;
+    font-family: 'Montserrat';
+    box-shadow: none;
+     
+    font-family: 'Montserrat'; 
     
-    
+}
+ .invoice-no{
+    max-width:2rem;
+    width: 2rem;
 } 
- .second-card-header-1 {
+
+.status-img{
+    margin-right: 5px;
+}
+
+.uploded-by{
+    max-width: 5rem;  
+    font-family: 'Montserrat';
+    word-wrap:normal;
+    text-align: center;
+     width: 5rem; 
+}
+.total-amount
+{   width: 2.5rem;
+    max-width: 2.5rem;
+}
+
+.saving
+{   width: 3rem;
+    max-width: 2.5rem;
+    
+}
+
+.outstanding{
+    width: 3rem;
+    max-width: 3REM;   
+    
+}
+.container-table tbody {
+    
+
+
+    font-family: 'Montserrat';
+    padding-right: 2rem; 
+    word-wrap: break-word;
+    min-width: 5.5rem;
+    table-layout:auto; 
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: baseline;
+    align-content: center;
+    margin-top: 25px;
+    margin-left: 29px;
+    cursor: pointer;
+    
+    
+}
+
+
+
+.container-table tbody tr {
+
+    display: flex;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 98%;
+    
+
+}
+
+/* .container-table tbody  :hover {
+    background-color: rgba(213, 212, 206, 0.859);
+    border-radius: 20px;
+    
+    
+  } */
+
+/*------------------------------------------------------- CSS STYLING FOR THE  TABLE HEADER CARDS ---------------------------------------------------------------------------------*/
+
+.second-card-header-1 {
     position: absolute;
     width: 5.75rem;
     height: 0.5rem;
     padding: 0.8rem;
-    padding-bottom: 1rem;
-    padding-top: 0.625rem;
+    padding-bottom: 1.5rem;
+    padding-top: 0.2rem;
     background: #3e3838f6;
     color: #f7f3f3;
     border-radius: 0.625rem;
-    
     font-family: 'Montserrat';
-    
+    padding-left: 1rem;
+    text-align: -webkit-center;
+
 }
 
 .second-card-header-2 {
     position: absolute;
-    width: 6.1rem;
+    width: 10.1rem;
     height: 0.5rem;
     padding: 0.8rem;
-    padding-bottom: 1rem;
-    padding-top: 0.625rem;
+    padding-bottom: 1.5rem;
+    padding-top: 0.2rem;
     margin-left: 8rem;
     font-family: 'Montserrat';
 
     background: #3e3838f6;
     color: #f7f3f3;
     border-radius: 0.625rem;
+    text-align: -webkit-center;
+
 }
 
 .second-card-header-3 {
@@ -166,112 +306,132 @@
     width: 7.5rem;
     height: 0.5rem;
     padding: 0.8rem;
-    padding-bottom: 1rem;
-    padding-top: 0.625rem;
-    margin-left: 16rem;
+    padding-bottom: 1.5rem;
+    padding-top: 0.2rem;
+    margin-left: 20rem;
     font-family: 'Montserrat';
 
     background: #3e3838f6;
     color: #f7f3f3;
     border-radius: 0.625rem;
+    text-align: -webkit-center;
+
 }
 
 .second-card-header-4 {
     position: absolute;
-    width: 14.5rem;
+    width: 11.5rem;
     height: 0.5rem;
     padding: 0.8rem;
-    padding-bottom: 0.95rem;
-    padding-top: 0.625rem;
-    margin-left: 25.5rem;
+    padding-bottom: 1.5rem;
+    padding-top: 0.2rem;
+    margin-left: 29.5rem;
     font-family: 'Montserrat';
 
 
     background: #3e3838f6;
     color: #f7f3f3;
     border-radius: 0.625rem;
+    text-align: -webkit-center;
+
 }
 
 .second-card-header-5 {
     position: absolute;
+    width: 8.5rem;
+    height: 0.5rem;
+    padding: 0.8rem;
+    padding-bottom: 1.5rem;
+    padding-top: 0.2rem;
+    margin-left: 43rem;
+    font-family: 'Montserrat';
+    text-align: -webkit-center;
+
+
+
+    background: #3e3838f6;
+    color: #f7f3f3;
+    border-radius: 0.625rem;
+}
+
+.second-card-header-6 {
+    position: absolute;
     width: 7.8rem;
     height: 0.5rem;
     padding: 0.8rem;
-    padding-bottom: 1rem;
-    padding-top: 0.625rem;
-    margin-left: 42rem;
+    padding-bottom: 1.5rem;
+    padding-top: 0.2rem;
+    margin-left: 54rem;
     font-family: 'Montserrat';
 
 
     background: #3e3838f6;
     color: #f7f3f3;
     border-radius: 0.625rem;
-}
-.second-card-header-6 {
-    position: absolute;
-    width: 8.8rem;
-    height: 0.5rem;
-    padding: 0.8rem;
-    padding-bottom: 1rem;
-    padding-top: 0.625rem;
-    margin-left: 52rem;
-    font-family: 'Montserrat';
+    text-align: -webkit-center;
 
-
-    background: #3e3838f6;
-    color: #f7f3f3;
-    border-radius: 0.625rem;
 }
+
 .second-card-header-7 {
     position: absolute;
     width: 7.8rem;
     height: 0.5rem;
     padding: 0.8rem;
-    padding-bottom: 1rem;
-    padding-top: 0.625rem;
-    margin-left: 63rem;
+    padding-bottom: 1.5rem;
+    padding-top: 0.2rem;
+    margin-left: 64rem;
     font-family: 'Montserrat';
 
 
     background: #3e3838f6;
     color: #f7f3f3;
     border-radius: 0.625rem;
+    text-align: -webkit-center;
+
 }
+
 .second-card-header-8 {
     position: absolute;
     width: 9.0rem;
     height: 0.5rem;
     padding: 0.8rem;
-    padding-bottom: 1rem;
-    padding-top: 0.625rem;
-    margin-left: 73rem;
+    padding-bottom: 1.5rem;
+    padding-top: 0.2rem;
+    margin-left: 74rem;
+    margin-right: 2rem;
     font-family: 'Montserrat';
 
 
     background: #3e3838f6;
     color: #f7f3f3;
     border-radius: 0.625rem;
+    text-align: -webkit-center;
+
 }
+
 .second-card-header-9 {
-    position: absolute;
-    width: 7.8rem;
-    height: 0.5rem;
-    padding: 0.8rem;
-    padding-bottom: 1rem;
-    padding-top: 0.625rem;
-    margin-left: 84rem;
-    font-family: 'Montserrat';
-
-
-    background: #3e3838f6;
-    color: #f7f3f3;
-    border-radius: 0.625rem;
-}
-.second-card-header-10 {
     position: absolute;
     width: 5.8rem;
     height: 0.5rem;
     padding: 0.8rem;
+    padding-bottom: 1.5rem;
+    padding-top: 0.2rem;
+    margin-left: 85rem;
+    font-family: 'Montserrat';
+
+
+    background: #3e3838f6;
+    color: #f7f3f3;
+    border-radius: 0.625rem;
+    text-align: -webkit-center;
+
+}
+
+/* .second-card-header-10 {
+    position: absolute;
+    width: 5rem;
+    height: 0.5rem;
+    padding: 0.8rem;
     padding-bottom: 1rem;
     padding-top: 0.625rem;
     margin-left: 84rem;
@@ -281,8 +441,9 @@
     background: #3e3838f6;
     color: #f7f3f3;
     border-radius: 0.625rem;
-}
-  /* .content-table{
+} */
+/* ------------------------------------------------------NO NEED TO STYLE 2ND EXAMPLE TABLE----------------------------------------------------------------------------- */
+/* .content-table{
     border-collapse: collapse;
     margin: 25px 0;
     font-size: 0.9em;
@@ -342,4 +503,3 @@
 
 
 }  */
-

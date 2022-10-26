@@ -4,7 +4,7 @@
 </div>
 
 
- <!-- <mat-card class="table-header-card">
+<!-- <mat-card class="table-header-card">
 
 
   <mat-card class="single-card-header-1">
@@ -73,21 +73,12 @@
 
 </mat-card>  -->
 
- <table style="display:flex;
-                overflow: hidden;
-                flex-direction: column;
-                flex-wrap: nowrap;
-                align-content: center;
-                justify-content: space-evenly;
-                align-items: flex-start;min-width: 4.5rem;font: 400 13px/10px;border-spacing: 0px;
-                            table-layout: fixed;
-                 margin-left:auto;
-                            margin-right:auto;width:100%">
+<table class="container-table">
 
 
-  <thead style="word-wrap: break-word;max-width: 150px;margin-top:1rem;">
+  <thead>
 
-     <div class="levels" style="display: flex; padding:3rem;padding-left:1rem;margin-top:1.5rem;line-height: 14px; "> 
+    
     <tr>
       <mat-card class="second-card-header-1">
         <th>Invoice No.</th>
@@ -141,72 +132,62 @@
         <th>Actions</th>
       </mat-card>
     </tr>
-     </div> 
-
-
-
 
   </thead>
 
 
-  <tbody style=" font-family: 'Montserrat';padding-left: 1rem; display:flex;word-wrap: break-word;min-width: 4.5rem;table-layout: fixed;flex-direction: row;
-  margin-left:auto;
-  margin-right:auto;width:100%">
+  <tbody >
 
-    <tr *ngFor="let e of this.data" style="display: flex;
-     padding-left: 1rem;  
-     flex-direction: row;
-     flex-wrap: nowrap;
-     justify-content: space-between;
-     align-items: center;">
+    <tr *ngFor="let e of this.data">
 
-     
-        <td>{{e.invoice_number}}</td>
-        <td style="padding-left: 4.1rem; max-width: 5rem;">
-          {{e.uploadedby}}</td>
-        <td style="padding-left: 5.1rem;">{{e.totalamount}}</td>
-        <td stbyle="padding-left: 5.5rem;">{{e.gst}}</td>
-        <td style="padding-left: 6.9rem; display: flex;    align-items: center;    left: 10px; ">
-          <mat-card style="background: rgba(52, 53, 54, 0.25);
-        border-radius: 30px;padding: 9px;">
-            <img style="margin-right: 11px" src="../assets/pogo.svg">{{e.status}}
-          </mat-card>
-        </td>
-        <td style="padding-left: 4.5rem;">{{e.invoicedue}}</td>
-        <td style="padding-left: 5.9rem;color: #76FF03;">{{e.saving}}</td>
-        <td style="padding-left: 8.1rem;">{{e.outstandingamount}}</td>
-        <td style="padding-left: 5rem;">
 
-          <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
-            <mat-icon>more_vert</mat-icon>
+      <td class="invoice-no">{{e.invoice_number}}</td>
+      <td class="uploded-by">{{e.uploadedby}}</td>
+      <td class="total-amount">{{e.totalamount}}</td>
+      <td class="Gst">{{e.gst}}</td>
+      <td class="status">
+        <mat-card class="status-background">
+          <img class="status-img" src="../assets/pogo.svg">{{e.status}}
+        </mat-card>
+      </td>
+
+      <td>{{e.invoicedue}}</td>
+      <td class="saving">{{e.saving}}</td>
+      <td class="outstanding">{{e.outstandingamount}}</td>
+      <td>
+
+        <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+          <mat-icon>more_vert</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item>
+            <mat-icon>dialpad</mat-icon>
+            <span>dialpad</span>
           </button>
-          <mat-menu #menu="matMenu">
-            <button mat-menu-item>
-              <mat-icon>dialpad</mat-icon>
-              <span>Subham</span>
-            </button>
-            <button mat-menu-item disabled>
-              <mat-icon>voicemail</mat-icon>
-              <span>Check voice mail</span>
-            </button>
-            <button mat-menu-item>
-              <mat-icon>notifications_off</mat-icon>
-              <span>Disable alerts</span>
-            </button>
-          </mat-menu>
-        </td>
-    
+          <button mat-menu-item disabled>
+            <mat-icon>voicemail</mat-icon>
+            <span>Check voice mail</span>
+          </button>
+          <button mat-menu-item>
+            <mat-icon>notifications_off</mat-icon>
+            <span>Disable alerts</span>
+          </button>
+        </mat-menu>
+      </td>
+
 
     </tr>
- 
 
   </tbody>
 
+</table>
+<mat-paginator class="paginator"[length]="100"
+              [pageSize]="10"
+              [pageSizeOptions]="[5, 10, 25, 100]"
+              aria-label="Select page">
+</mat-paginator>
 
-
-</table> 
-
- <!-- <table class="content-table">
+<!-- <table class="content-table">
   <thead>
     <tr>
       
@@ -281,8 +262,5 @@
     
   </tbody>
 </table> -->
-<script>
-  const tableLoop = async ()  =>{
 
-  }
-</script>
+  
